@@ -47,10 +47,13 @@
   @media (min-width: @desktop-width) {
     margin-bottom: 115px;
   }
+  @media (min-width: 1420px) {
+    margin-bottom: 0;
+  }
 }
 
 .page__touch {
-  background: url("../img/touch-bg.jpg") center center no-repeat;
+  background: url("../img/touch-bg.jpg") center no-repeat;
   background-size: cover;
   padding-top: 30px;
   padding-bottom: 178px;
@@ -58,10 +61,15 @@
     padding-top: 120px;
     padding-bottom: 230px;
   }
+  @media (min-width: 1420px) {
+    padding-top: 235px;
+    padding-bottom: 230px;
+    background-position: bottom;
+  }
 }
 
 .page__newsletter {
-  margin-top: -2px;
+  margin-top: -3px;
   padding-top: 20px;
   padding-bottom: 30px;
   background-color: #171819;

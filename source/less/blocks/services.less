@@ -29,7 +29,7 @@
   height: 2px;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -10px;
+  top: 40px;
   background-color: @text-color-accent;
   @media (min-width: @mobile-width) {
     left: 0;
@@ -53,9 +53,12 @@
   font-size: 11px;
   line-height: 19px;
   @media (min-width: @mobile-width) {
-    width: 405px;
+    width: 300px;
     margin-bottom: 0;
     letter-spacing: 0.2px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 405px;
   }
 }
 .services__button {

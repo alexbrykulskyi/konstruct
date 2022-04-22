@@ -75,6 +75,7 @@ img {
 @media (min-width: 767px) {
   .container {
     max-width: 768px;
+    padding: 0 40px;
   }
 }
 @media (min-width: 940px) {
@@ -210,8 +211,13 @@ img {
     margin-bottom: 115px;
   }
 }
+@media (min-width: 1420px) {
+  .page__services {
+    margin-bottom: 0;
+  }
+}
 .page__touch {
-  background: url("../img/touch-bg.jpg") center center no-repeat;
+  background: url("../img/touch-bg.jpg") center no-repeat;
   background-size: cover;
   padding-top: 30px;
   padding-bottom: 178px;
@@ -222,8 +228,15 @@ img {
     padding-bottom: 230px;
   }
 }
+@media (min-width: 1420px) {
+  .page__touch {
+    padding-top: 235px;
+    padding-bottom: 230px;
+    background-position: bottom;
+  }
+}
 .page__newsletter {
-  margin-top: -2px;
+  margin-top: -3px;
   padding-top: 20px;
   padding-bottom: 30px;
   background-color: #171819;
@@ -387,7 +400,7 @@ img {
   height: 2px;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -10px;
+  top: 40px;
   background-color: #00A4E5;
 }
 .story__wrap {
@@ -543,7 +556,7 @@ img {
   height: 2px;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -10px;
+  top: 40px;
   background-color: #00A4E5;
 }
 @media (min-width: 767px) {
@@ -571,9 +584,14 @@ img {
 }
 @media (min-width: 767px) {
   .services__text {
-    width: 405px;
+    width: 300px;
     margin-bottom: 0;
     letter-spacing: 0.2px;
+  }
+}
+@media (min-width: 940px) {
+  .services__text {
+    width: 405px;
   }
 }
 .services__button {
@@ -700,8 +718,13 @@ img {
 @media (min-width: 767px) {
   .newsletter__title {
     letter-spacing: 0.85px;
-    margin-right: 70px;
+    margin-right: 50px;
     margin-bottom: 0;
+  }
+}
+@media (min-width: 940px) {
+  .newsletter__title {
+    margin-right: 70px;
   }
 }
 .newsletter__input {
@@ -813,8 +836,10 @@ img {
     column-gap: 30px;
   }
 }
-.footer__item {
-  width: 77px;
+@media (min-width: 940px) {
+  .footer__item {
+    width: 78px;
+  }
 }
 .navigation__wrapItemLeft {
   margin-bottom: 30px;
