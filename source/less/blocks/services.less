@@ -39,8 +39,12 @@
 
 .service__wrapButtonText {
   display: flex;
-  flex-direction: row;
-  column-gap: 20px;
+  flex-direction: column;
+  @media (min-width: @mobile-width) {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+  }
 }
 
 .services__text {
