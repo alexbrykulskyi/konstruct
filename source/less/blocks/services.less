@@ -1,0 +1,133 @@
+.services__wrapText {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: @mobile-width) {
+    flex-direction: row;
+    margin-bottom: 75px;
+    justify-content: space-between;
+  }
+}
+.services__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 32px;
+  .basic-bold();
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  @media (min-width: @mobile-width) {
+    margin: 0;
+    text-align: left;
+  }
+}
+
+.services__title::before {
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  background-color: @text-color-accent;
+  @media (min-width: @mobile-width) {
+    left: 0;
+    transform: translateX(0);
+  }
+}
+
+.service__wrapButtonText {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+
+.services__text {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 11px;
+  line-height: 19px;
+  @media (min-width: @mobile-width) {
+    width: 405px;
+    margin-bottom: 0;
+    letter-spacing: 0.2px;
+  }
+}
+.services__button {
+  margin-bottom: 50px;
+  @media (min-width: @mobile-width) {
+    margin-bottom: 0;
+  }
+}
+
+.services__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  row-gap: 30px;
+  @media (min-width: @mobile-width) {
+    flex-direction: row;
+    column-gap: 28px;
+  }
+}
+.services__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid #e6e6e6;
+  padding-top: 155px;
+  padding-bottom: 39px;
+  padding-left: 23px;
+  @media (min-width: @mobile-width) {
+    padding-top: 138px;
+    padding-bottom: 46px;
+  }
+}
+
+.services__item::before {
+  position: absolute;
+  content: '';
+  width: 80px;
+  height: 85px;
+  top: 42px;
+  left: 25px;
+  background-repeat: no-repeat;
+  @media (min-width: @mobile-width) {
+    top: 38px;
+    left: 23px;
+  }
+}
+
+.services__item--newspaper::before {
+  background-image: url("../img/services-iconNewspaper.png");
+}
+
+.services__item--shop::before {
+  background-image: url("../img/services-iconShop.png");
+}
+
+.services__item--build::before {
+  background-image: url("../img/services-iconBuild.png");
+}
+
+.services__itemTitle {
+  margin: 0;
+  .basic-bold();
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+  @media (min-width: @mobile-width) {
+    letter-spacing: 0.43px;
+    line-height: 26px;
+  }
+}
+
+.services__itemText {
+  margin: 0;
+  font-size: 14px;
+  line-height: 25px;
+}

@@ -1,0 +1,19 @@
+.touch__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.touch__title {
+  margin: 0;
+  margin-bottom: 30px;
+  .basic-bold();
+  font-size: 26px;
+  line-height: 36px;
+  @media (min-width: @mobile-width) {
+    margin-bottom: 35px;
+    font-size: 30px;
+    letter-spacing: 0.15px;
+  }
+}

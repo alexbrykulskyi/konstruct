@@ -1,0 +1,75 @@
+.page {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  .basic-reg();
+  color: @text-color-basic;
+  font-size: 13px;
+  line-height: 23px;
+}
+
+.page--noScroll {
+  overflow: hidden;
+}
+
+.page__header {
+  position: relative;
+  background: url("../img/header-bg.jpg") center center no-repeat;
+  background-size: cover;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: @light;
+  @media (min-width: @mobile-width) {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+}
+
+.page__navigation {
+  margin-bottom: 50px;
+  @media (min-width: @mobile-width) {
+    margin-bottom: 58px;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 25px 15px;
+  }
+}
+
+.page__story {
+  margin-bottom: 50px;
+  @media (min-width: @desktop-width) {
+    margin-bottom: 120px;
+  }
+}
+
+.page__services {
+  margin-bottom: 50px;
+  @media (min-width: @desktop-width) {
+    margin-bottom: 115px;
+  }
+}
+
+.page__touch {
+  background: url("../img/touch-bg.jpg") center center no-repeat;
+  background-size: cover;
+  padding-top: 30px;
+  padding-bottom: 178px;
+  @media (min-width: @desktop-width) {
+    padding-top: 120px;
+    padding-bottom: 230px;
+  }
+}
+
+.page__newsletter {
+  margin-top: -2px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: #171819;
+  @media (min-width: @mobile-width) {
+    padding: 30px 0;
+  }
+}
+
+.page__footer {
+  color: @light;
+}

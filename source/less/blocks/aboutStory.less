@@ -1,0 +1,137 @@
+.story__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 22px;
+  .basic-bold();
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 25px;
+  @media (min-width: @mobile-width) {
+    margin-bottom: 40px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 70px;
+    letter-spacing: 2.3px;
+  }
+}
+
+.story__title::before{
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  background-color: @text-color-accent;
+}
+
+.story__wrap {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: @mobile-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.story__wrapText {
+  margin-bottom: 30px;
+  @media (min-width: @mobile-width) {
+    margin-bottom: 0;
+  }
+}
+
+.story__subtitle {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 25px;
+  @media (min-width: @desktop-width) {
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.17px;
+  }
+}
+
+.story__accent {
+  color: @text-color-accent;
+}
+
+.story__text {
+  margin: 0;
+  letter-spacing: 0.19px;
+}
+
+.story__wrapFeatures {
+  display: flex;
+  @media (min-width: @mobile-width) {
+    align-items: center;
+    margin-left: 30px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-left: 65px;
+    align-items: flex-end;
+  }
+}
+
+.story__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  column-gap: 14px;
+  .basic-extraBold();
+  color: @light;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  list-style: none;
+  text-transform: uppercase;
+  @media (min-width: 374px) {
+    font-size: 17px;
+  }
+  @media (min-width: @desktop-width) {
+    column-gap: 20px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+.story__item {
+  width: 87px;
+  height: 140px;
+  padding-top: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  @media (min-width: 374px) {
+    width: 100px;
+    height: 160px;
+  }
+  @media (min-width: @mobile-width) {
+    width: 120px;
+    height: 186px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 140px;
+    height: 224px;
+    padding-top: 15px;
+    padding-left: 14px;
+  }
+}
+
+.story__item--plan {
+  background: url("../img/story-plan.png") center center no-repeat;
+  background-size: cover;
+}
+
+.story__item--manage {
+  background: url("../img/story-manage.png") center center no-repeat;
+  background-size: cover;
+}
+
+.story__item--build {
+  background: url("../img/story-build.png") center center no-repeat;
+  background-size: cover;
+}

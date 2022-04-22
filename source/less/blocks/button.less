@@ -1,0 +1,78 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .basic-bold();
+  width: 150px;
+  height: 40px;
+  margin: 0 auto;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: @light;
+  background-color: @text-color-accent;
+  @media (min-width: @mobile-width) {
+    margin: 0;
+  }
+}
+
+/*Button popup*/
+
+.buttonToggle {
+  display: inline-block;
+  position: absolute;
+  top: -2px;
+  right: 15px;
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  margin-right: 2px;
+  z-index: 10;
+  @media (min-width: @mobile-width) {
+    display: none;
+  }
+}
+
+.buttonToggle__burger {
+  margin-top: 11px;
+  margin-left: 5px;
+}
+
+.buttonToggle__burger,
+.buttonToggle__burger::before,
+.buttonToggle__burger::after {
+  position: absolute;
+  background-color: @light;
+  width: 24px;
+  height: 5px;
+  border-radius: 7px;
+}
+
+.buttonToggle__burger::before,
+.buttonToggle__burger::after {
+  content: '';
+  display: block;
+  transition: 0.6s;
+}
+
+.buttonToggle__burger::before {
+  transform: translateY(-10px);
+}
+
+.buttonToggle__burger::after {
+  transform: translateY(10px);
+}
+
+.buttonToggle--active span {
+  height: 0;
+}
+
+.buttonToggle--active span::before {
+  transform: rotate(45deg);
+}
+
+.buttonToggle--active span::after{
+  transform: rotate(-45deg);
+}

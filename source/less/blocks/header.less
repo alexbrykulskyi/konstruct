@@ -1,0 +1,47 @@
+.header__logoContainer {
+  display: flex;
+  justify-content: center;
+  height: 23px;
+  position: relative;
+  margin-bottom: 200px;
+  @media (min-width: @mobile-width) {
+    margin-bottom: 300px;
+  }
+}
+
+.header__title {
+  margin: 0;
+  margin-bottom: 20px;
+  .secondary-reg();
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  @media (min-width: @mobile-width) {
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: 6px;
+  }
+}
+
+.header__text {
+  margin: 0;
+  margin-bottom: 160px;
+  .basic-semiBold();
+  font-size: 16px;
+  line-height: 22px;
+  @media (min-width: @mobile-width) {
+    margin-bottom: 220px;
+  }
+}
+
+.header__subtitle {
+  .basic-semiBold();
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+  @media (min-width: @mobile-width) {
+    letter-spacing: 5px;
+  }
+}
