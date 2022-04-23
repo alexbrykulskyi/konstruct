@@ -22,6 +22,9 @@ img {
   margin: 0 auto;
   padding: 0 15px;
   box-sizing: border-box;
+  @media (max-width: @mobile-width) {
+    min-width: 360px;
+  }
   @media (min-width: @mobile-width) {
     max-width: 768px;
     padding: 0 40px;
